@@ -68,7 +68,7 @@ export class JSONEditorComponent implements AfterViewInit, OnDestroy {
         let defaultConfig: any = {
             onChange: function () {
                 if (self.instance) {
-                    const value = self.instance.get();
+                    const value = self.instance.getText();
                     self.updateValue(value);
                 }
             },
